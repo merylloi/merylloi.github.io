@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TECHGUARD</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -24,21 +24,33 @@
     <main>
         <section id="home">
             <div class="container">
-                <h2>Your Reliable Computer Repair Technician</h2>
+                <h2>Reliable Computer Repair Solutions</h2>
                 <p>Your go-to place for fast, affordable, and professional computer repair services. We bring life back to your tech with a touch of expertise.</p>
+                <a href="#services" class="btn-primary">Explore Our Services</a>
             </div>
         </section>
 
         <section id="services">
             <div class="container">
                 <h2>Our Services</h2>
-                <p>Whether it's a sluggish computer or a hardware failure, we have you covered:</p>
-                <ul>
-                    <li>🔧 Software Troubleshooting & Repair</li>
-                    <li>⚙️ Hardware Diagnostics & Upgrades</li>
-                    <li>💻 Laptop Optimization & Upgrades</li>
-                    <li>🛠️ Data Recovery & Backup Solutions</li>
-                </ul>
+                <div class="service-cards">
+                    <div class="card">
+                        <h3>🔧 Software Troubleshooting</h3>
+                        <p>We fix software issues and optimize your system for better performance.</p>
+                    </div>
+                    <div class="card">
+                        <h3>⚙️ Hardware Upgrades</h3>
+                        <p>Upgrade your PC's hardware to improve speed and performance.</p>
+                    </div>
+                    <div class="card">
+                        <h3>💻 Laptop Optimization</h3>
+                        <p>Get your laptop running like new again with our optimization services.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🛠️ Data Recovery</h3>
+                        <p>Recover lost data quickly and securely from damaged devices.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -46,6 +58,7 @@
             <div class="container">
                 <h2>Who We Are</h2>
                 <p>We are a team of tech enthusiasts who are passionate about solving your computer issues. Our mission is to provide top-notch repair services that ensure your devices run seamlessly.</p>
+                <p>With years of experience and a commitment to quality, we handle everything from minor software fixes to major hardware repairs.</p>
             </div>
         </section>
 
@@ -53,8 +66,12 @@
             <div class="container">
                 <h2>Get in Touch</h2>
                 <p>Reach out to us for any queries or to schedule a repair. We’re here to help you get your devices back on track.</p>
-                <p>Email: <a href="mailto:info@yourtechhub.com">info@yourtechhub.com</a></p>
-                <p>Phone: +1-234-567-890</p>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
             </div>
         </section>
     </main>
