@@ -66,10 +66,10 @@
             <div class="container">
                 <h2>Get in Touch</h2>
                 <p>Reach out to us for any queries or to schedule a repair. We’re here to help you get your devices back on track.</p>
-                <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
+                <form action="send_email.php" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
                     <button type="submit" class="btn-primary">Send Message</button>
                 </form>
             </div>
